@@ -1,0 +1,383 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg_gradient"
+    android:fillViewport="true">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="16dp">
+
+        <!-- 页面头部 -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:background="@drawable/header_gradient"
+            android:padding="20dp"
+            android:gravity="center_vertical"
+            android:layout_marginBottom="20dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/record_period"
+                android:textSize="20sp"
+                android:textColor="@android:color/white"
+                android:textStyle="bold" />
+        </LinearLayout>
+
+        <!-- 经期状态 -->
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="16dp"
+            app:cardCornerRadius="20dp"
+            app:cardElevation="4dp"
+            app:cardBackgroundColor="@android:color/white">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:padding="20dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:gravity="center_vertical"
+                    android:layout_marginBottom="20dp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="📅"
+                        android:textSize="18sp"
+                        android:layout_marginEnd="10dp" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/period_status"
+                        android:textSize="18sp"
+                        android:textColor="@color/primary_color"
+                        android:textStyle="bold" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <Button
+                        android:id="@+id/btn_status_start"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:layout_marginEnd="8dp"
+                        android:text="▶ 开始"
+                        android:textAllCaps="false"
+                        android:textStyle="bold"
+                        android:textColor="@color/btn_status_text_selector"
+                        android:background="@drawable/btn_status_selector"
+                        android:padding="16dp"
+                        android:foreground="?attr/selectableItemBackgroundBorderless" />
+
+                    <Button
+                        android:id="@+id/btn_status_end"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:layout_marginHorizontal="4dp"
+                        android:text="■ 结束"
+                        android:textAllCaps="false"
+                        android:textStyle="bold"
+                        android:textColor="@color/btn_status_text_selector"
+                        android:background="@drawable/btn_status_selector"
+                        android:padding="16dp"
+                        android:foreground="?attr/selectableItemBackgroundBorderless" />
+
+                    <Button
+                        android:id="@+id/btn_status_none"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:layout_marginStart="8dp"
+                        android:text="✕ 无"
+                        android:textAllCaps="false"
+                        android:textStyle="bold"
+                        android:textColor="@color/btn_status_text_selector"
+                        android:background="@drawable/btn_status_selector"
+                        android:padding="16dp"
+                        android:foreground="?attr/selectableItemBackgroundBorderless" />
+                </LinearLayout>
+            </LinearLayout>
+        </androidx.cardview.widget.CardView>
+
+        <!-- 月经量 -->
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="16dp"
+            app:cardCornerRadius="20dp"
+            app:cardElevation="4dp"
+            app:cardBackgroundColor="@android:color/white">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:padding="20dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:gravity="center_vertical"
+                    android:layout_marginBottom="20dp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="💧"
+                        android:textSize="18sp"
+                        android:layout_marginEnd="10dp" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/menstrual_flow"
+                        android:textSize="18sp"
+                        android:textColor="@color/primary_color"
+                        android:textStyle="bold" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <Button
+                        android:id="@+id/btn_flow_light"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:layout_marginEnd="8dp"
+                        android:text="💧 少量"
+                        android:textAllCaps="false"
+                        android:textStyle="bold"
+                        android:textColor="@color/btn_flow_text_selector"
+                        android:background="@drawable/btn_flow_selector"
+                        android:padding="16dp"
+                        android:foreground="?attr/selectableItemBackgroundBorderless" />
+
+                    <Button
+                        android:id="@+id/btn_flow_normal"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:layout_marginHorizontal="4dp"
+                        android:text="💦 正常"
+                        android:textAllCaps="false"
+                        android:textStyle="bold"
+                        android:textColor="@color/btn_flow_text_selector"
+                        android:background="@drawable/btn_flow_selector"
+                        android:padding="16dp"
+                        android:foreground="?attr/selectableItemBackgroundBorderless" />
+
+                    <Button
+                        android:id="@+id/btn_flow_heavy"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:layout_marginStart="8dp"
+                        android:text="🌊 较多"
+                        android:textAllCaps="false"
+                        android:textStyle="bold"
+                        android:textColor="@color/btn_flow_text_selector"
+                        android:background="@drawable/btn_flow_selector"
+                        android:padding="16dp"
+                        android:foreground="?attr/selectableItemBackgroundBorderless" />
+                </LinearLayout>
+            </LinearLayout>
+        </androidx.cardview.widget.CardView>
+
+        <!-- 疼痛程度 -->
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="16dp"
+            app:cardCornerRadius="20dp"
+            app:cardElevation="4dp"
+            app:cardBackgroundColor="@android:color/white">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:padding="20dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:gravity="center_vertical"
+                    android:layout_marginBottom="20dp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="❤️"
+                        android:textSize="18sp"
+                        android:layout_marginEnd="10dp" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/pain_level"
+                        android:textSize="18sp"
+                        android:textColor="@color/primary_color"
+                        android:textStyle="bold" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <Button
+                        android:id="@+id/btn_pain_0"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:layout_marginEnd="6dp"
+                        android:text="😊\n无痛"
+                        android:textColor="@color/btn_pain_text_selector"
+                        android:background="@drawable/btn_pain_selector"
+                        android:padding="16dp"
+                        android:gravity="center"
+                        android:textStyle="bold"
+                        android:textAllCaps="false"
+                        android:foreground="?attr/selectableItemBackgroundBorderless" />
+
+                    <Button
+                        android:id="@+id/btn_pain_1"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:layout_marginHorizontal="3dp"
+                        android:text="😐\n轻微"
+                        android:textColor="@color/btn_pain_text_selector"
+                        android:background="@drawable/btn_pain_selector"
+                        android:padding="16dp"
+                        android:gravity="center"
+                        android:textStyle="bold"
+                        android:textAllCaps="false"
+                        android:foreground="?attr/selectableItemBackgroundBorderless" />
+
+                    <Button
+                        android:id="@+id/btn_pain_2"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:layout_marginHorizontal="3dp"
+                        android:text="😟\n中度"
+                        android:textColor="@color/btn_pain_text_selector"
+                        android:background="@drawable/btn_pain_selector"
+                        android:padding="16dp"
+                        android:gravity="center"
+                        android:textStyle="bold"
+                        android:textAllCaps="false"
+                        android:foreground="?attr/selectableItemBackgroundBorderless" />
+
+                    <Button
+                        android:id="@+id/btn_pain_3"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:layout_marginStart="6dp"
+                        android:text="😢\n严重"
+                        android:textColor="@color/btn_pain_text_selector"
+                        android:background="@drawable/btn_pain_selector"
+                        android:padding="16dp"
+                        android:gravity="center"
+                        android:textStyle="bold"
+                        android:textAllCaps="false"
+                        android:foreground="?attr/selectableItemBackgroundBorderless" />
+                </LinearLayout>
+            </LinearLayout>
+        </androidx.cardview.widget.CardView>
+
+        <!-- 备注 -->
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="16dp"
+            app:cardCornerRadius="20dp"
+            app:cardElevation="4dp"
+            app:cardBackgroundColor="@android:color/white">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:padding="20dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:gravity="center_vertical"
+                    android:layout_marginBottom="20dp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="📝"
+                        android:textSize="18sp"
+                        android:layout_marginEnd="10dp" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/notes"
+                        android:textSize="18sp"
+                        android:textColor="@color/primary_color"
+                        android:textStyle="bold" />
+                </LinearLayout>
+
+                <EditText
+                    android:id="@+id/et_notes"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:minHeight="100dp"
+                    android:hint="@string/notes_hint"
+                    android:background="@drawable/input_background"
+                    android:padding="15dp"
+                    android:gravity="top|start"
+                    android:inputType="textMultiLine"
+                    android:maxLines="5" />
+            </LinearLayout>
+        </androidx.cardview.widget.CardView>
+
+        <!-- 保存按钮 -->
+        <Button
+            android:id="@+id/btn_save"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/save_record"
+            android:textColor="@android:color/white"
+            android:background="@drawable/btn_primary_gradient"
+            android:padding="18dp"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:layout_marginBottom="80dp"
+            style="@style/Widget.Material3.Button" />
+    </LinearLayout>
+</ScrollView>
+

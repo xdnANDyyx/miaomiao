@@ -1,0 +1,303 @@
+﻿Initialized native services in: C:\Users\Benteng\.gradle\native
+Initialized jansi services in: C:\Users\Benteng\.gradle\native
+Found daemon DaemonInfo{pid=4868, address=[0f1e169e-556f-47ab-ad30-8c6b83b43d37 port:23831, addresses:[/127.0.0.1]], state=Idle, lastBusy=1764636975717, context=DefaultDaemonContext[uid=3ec060bd-e012-4632-9ab6-58c626fa1347,javaHome=C:\Users\Benteng\.trae-cn\extensions\redhat.java-1.50.0-win32-x64\jre\21.0.9-win32-x86_64,javaVersion=21,javaVendor=Eclipse Adoptium,daemonRegistryDir=C:\Users\Benteng\.gradle\daemon,pid=4868,idleTimeout=10800000,priority=NORMAL,applyInstrumentationAgent=true,nativeServicesMode=ENABLED,daemonOpts=-Xmx2048m,-Dfile.encoding=UTF-8,-Duser.country=CN,-Duser.language=zh,-Duser.variant]} however its context does not match the desired criteria.
+JVM is incompatible.
+Wanted: DaemonRequestContext{jvmCriteria=C:\Program Files\Eclipse Adoptium\jdk-17.0.16.8-hotspot (no JDK specified, using current Java home), daemonOpts=[-Xmx2048m, -Dfile.encoding=UTF-8, -Duser.country=CN, -Duser.language=zh, -Duser.variant], applyInstrumentationAgent=true, nativeServicesMode=ENABLED, priority=NORMAL}
+Actual: DefaultDaemonContext[uid=3ec060bd-e012-4632-9ab6-58c626fa1347,javaHome=C:\Users\Benteng\.trae-cn\extensions\redhat.java-1.50.0-win32-x64\jre\21.0.9-win32-x86_64,javaVersion=21,javaVendor=Eclipse Adoptium,daemonRegistryDir=C:\Users\Benteng\.gradle\daemon,pid=4868,idleTimeout=10800000,priority=NORMAL,applyInstrumentationAgent=true,nativeServicesMode=ENABLED,daemonOpts=-Xmx2048m,-Dfile.encoding=UTF-8,-Duser.country=CN,-Duser.language=zh,-Duser.variant]
+
+  Looking for a different daemon...
+Found daemon DaemonInfo{pid=1260, address=[39783aa8-21a7-4a32-a391-59500289f9cd port:38008, addresses:[/127.0.0.1]], state=Idle, lastBusy=1765159031484, context=DefaultDaemonContext[uid=77319249-5c03-4519-9280-d5cd235ec861,javaHome=D:\androidStudio\jbr,javaVersion=21,javaVendor=JetBrains s.r.o.,daemonRegistryDir=C:\Users\Benteng\.gradle\daemon,pid=1260,idleTimeout=10800000,priority=NORMAL,applyInstrumentationAgent=true,nativeServicesMode=ENABLED,daemonOpts=-Xmx2048m,-Dfile.encoding=UTF-8,-Duser.country=CN,-Duser.language=zh,-Duser.variant]} however its context does not match the desired criteria.
+JVM is incompatible.
+Wanted: DaemonRequestContext{jvmCriteria=C:\Program Files\Eclipse Adoptium\jdk-17.0.16.8-hotspot (no JDK specified, using current Java home), daemonOpts=[-Xmx2048m, -Dfile.encoding=UTF-8, -Duser.country=CN, -Duser.language=zh, -Duser.variant], applyInstrumentationAgent=true, nativeServicesMode=ENABLED, priority=NORMAL}
+Actual: DefaultDaemonContext[uid=77319249-5c03-4519-9280-d5cd235ec861,javaHome=D:\androidStudio\jbr,javaVersion=21,javaVendor=JetBrains s.r.o.,daemonRegistryDir=C:\Users\Benteng\.gradle\daemon,pid=1260,idleTimeout=10800000,priority=NORMAL,applyInstrumentationAgent=true,nativeServicesMode=ENABLED,daemonOpts=-Xmx2048m,-Dfile.encoding=UTF-8,-Duser.country=CN,-Duser.language=zh,-Duser.variant]
+
+  Looking for a different daemon...
+The client will now receive all logging from the daemon (pid: 20692). The daemon log file: C:\Users\Benteng\.gradle\daemon\8.13\daemon-20692.out.log
+Starting 13th build in daemon [uptime: 43 mins 43.915 secs, performance: 100%, GC rate: 0.00/s, heap usage: 0% of 2 GiB]
+Using 16 worker leases.
+Now considering [D:\M\t\y\myl\myl\myl] as hierarchies to watch
+Watching the file system is configured to be enabled if available
+File system watching is active
+Starting Build
+Settings evaluated using settings file 'D:\M\t\y\myl\myl\myl\settings.gradle'.
+Projects loaded. Root project using build file 'D:\M\t\y\myl\myl\myl\build.gradle'.
+Included projects: [root project 'My Daning', project ':app']
+
+> Configure project :
+Evaluating root project 'My Daning' using build file 'D:\M\t\y\myl\myl\myl\build.gradle'.
+Resolved plugin [id: 'com.android.application', version: '8.11.2', apply: false]
+Resolved plugin [id: 'org.jetbrains.kotlin.android', version: '1.9.20', apply: false]
+
+> Configure project :app
+Evaluating project ':app' using build file 'D:\M\t\y\myl\myl\myl\app\build.gradle'.
+Resolved plugin [id: 'com.android.application', version: '8.11.2']
+Resolved plugin [id: 'kotlin-android']
+Resolved plugin [id: 'kotlin-kapt']
+Using default execution profile
+Using Kotlin Gradle Plugin gradle81 variant
+All projects evaluated.
+Task name matched 'compileDebugJavaWithJavac'
+Selected primary task 'compileDebugJavaWithJavac' from project :
+Tasks to be executed: [task ':app:checkKotlinGradlePluginConfigurationErrors', task ':app:preBuild', task ':app:preDebugBuild', task ':app:checkDebugAarMetadata', task ':app:generateDebugResValues', task ':app:mapDebugSourceSetPaths', task ':app:generateDebugResources', task ':app:mergeDebugResources', task ':app:packageDebugResources', task ':app:parseDebugLocalResources', task ':app:createDebugCompatibleScreenManifests', task ':app:extractDeepLinksDebug', task ':app:processDebugMainManifest', task ':app:processDebugManifest', task ':app:processDebugManifestForPackage', task ':app:processDebugResources', task ':app:kaptGenerateStubsDebugKotlin', task ':app:kaptDebugKotlin', task ':app:compileDebugKotlin', task ':app:javaPreCompileDebug', task ':app:compileDebugJavaWithJavac']
+Tasks that were excluded: []
+Resolve mutations for :app:checkKotlinGradlePluginConfigurationErrors (Thread[Execution worker,5,main]) started.
+:app:checkKotlinGradlePluginConfigurationErrors (Thread[Execution worker,5,main]) started.
+
+> Task :app:checkKotlinGradlePluginConfigurationErrors
+Caching disabled for task ':app:checkKotlinGradlePluginConfigurationErrors' because:
+  Build cache is disabled
+Task ':app:checkKotlinGradlePluginConfigurationErrors' is not up-to-date because:
+  Task has not declared any outputs despite executing actions.
+Resolve mutations for :app:preBuild (Thread[included builds,5,main]) started.
+:app:preBuild (Thread[included builds,5,main]) started.
+
+> Task :app:preBuild UP-TO-DATE
+Skipping task ':app:preBuild' as it has no actions.
+Resolve mutations for :app:preDebugBuild (Thread[included builds,5,main]) started.
+:app:preDebugBuild (Thread[included builds,5,main]) started.
+
+> Task :app:preDebugBuild UP-TO-DATE
+Skipping task ':app:preDebugBuild' as it has no actions.
+Resolve mutations for :app:checkDebugAarMetadata (Thread[included builds,5,main]) started.
+:app:checkDebugAarMetadata (Thread[included builds,5,main]) started.
+
+> Task :app:checkDebugAarMetadata UP-TO-DATE
+Caching disabled for task ':app:checkDebugAarMetadata' because:
+  Build cache is disabled
+  Caching has been disabled for the task
+Skipping task ':app:checkDebugAarMetadata' as it is up-to-date.
+Resolve mutations for :app:generateDebugResValues (Thread[included builds,5,main]) started.
+:app:generateDebugResValues (Thread[Execution worker Thread 15,5,main]) started.
+
+> Task :app:generateDebugResValues UP-TO-DATE
+Caching disabled for task ':app:generateDebugResValues' because:
+  Build cache is disabled
+Skipping task ':app:generateDebugResValues' as it is up-to-date.
+Resolve mutations for :app:mapDebugSourceSetPaths (Thread[Execution worker Thread 15,5,main]) started.
+:app:mapDebugSourceSetPaths (Thread[Execution worker Thread 15,5,main]) started.
+
+> Task :app:mapDebugSourceSetPaths UP-TO-DATE
+Caching disabled for task ':app:mapDebugSourceSetPaths' because:
+  Build cache is disabled
+  Caching has been disabled for the task
+Skipping task ':app:mapDebugSourceSetPaths' as it is up-to-date.
+Resolve mutations for :app:generateDebugResources (Thread[Execution worker Thread 15,5,main]) started.
+:app:generateDebugResources (Thread[included builds,5,main]) started.
+
+> Task :app:generateDebugResources UP-TO-DATE
+Caching disabled for task ':app:generateDebugResources' because:
+  Build cache is disabled
+Skipping task ':app:generateDebugResources' as it is up-to-date.
+Resolve mutations for :app:mergeDebugResources (Thread[included builds,5,main]) started.
+:app:mergeDebugResources (Thread[included builds,5,main]) started.
+
+> Task :app:mergeDebugResources UP-TO-DATE
+Caching disabled for task ':app:mergeDebugResources' because:
+  Build cache is disabled
+Skipping task ':app:mergeDebugResources' as it is up-to-date.
+Resolve mutations for :app:packageDebugResources (Thread[Execution worker Thread 15,5,main]) started.
+:app:packageDebugResources (Thread[Execution worker Thread 15,5,main]) started.
+
+> Task :app:packageDebugResources UP-TO-DATE
+Caching disabled for task ':app:packageDebugResources' because:
+  Build cache is disabled
+Skipping task ':app:packageDebugResources' as it is up-to-date.
+Resolve mutations for :app:parseDebugLocalResources (Thread[Execution worker Thread 15,5,main]) started.
+:app:parseDebugLocalResources (Thread[Execution worker Thread 15,5,main]) started.
+
+> Task :app:parseDebugLocalResources UP-TO-DATE
+Caching disabled for task ':app:parseDebugLocalResources' because:
+  Build cache is disabled
+Skipping task ':app:parseDebugLocalResources' as it is up-to-date.
+Resolve mutations for :app:createDebugCompatibleScreenManifests (Thread[Execution worker Thread 15,5,main]) started.
+:app:createDebugCompatibleScreenManifests (Thread[Execution worker Thread 15,5,main]) started.
+
+> Task :app:createDebugCompatibleScreenManifests UP-TO-DATE
+Caching disabled for task ':app:createDebugCompatibleScreenManifests' because:
+  Build cache is disabled
+  Caching has been disabled for the task
+Skipping task ':app:createDebugCompatibleScreenManifests' as it is up-to-date.
+Resolve mutations for :app:extractDeepLinksDebug (Thread[Execution worker Thread 15,5,main]) started.
+:app:extractDeepLinksDebug (Thread[Execution worker Thread 15,5,main]) started.
+
+> Task :app:extractDeepLinksDebug UP-TO-DATE
+Caching disabled for task ':app:extractDeepLinksDebug' because:
+  Build cache is disabled
+Skipping task ':app:extractDeepLinksDebug' as it is up-to-date.
+Resolve mutations for :app:processDebugMainManifest (Thread[Execution worker Thread 15,5,main]) started.
+:app:processDebugMainManifest (Thread[Execution worker Thread 15,5,main]) started.
+
+> Task :app:processDebugMainManifest UP-TO-DATE
+Caching disabled for task ':app:processDebugMainManifest' because:
+  Build cache is disabled
+Skipping task ':app:processDebugMainManifest' as it is up-to-date.
+Resolve mutations for :app:processDebugManifest (Thread[Execution worker Thread 15,5,main]) started.
+:app:processDebugManifest (Thread[Execution worker Thread 2,5,main]) started.
+
+> Task :app:processDebugManifest UP-TO-DATE
+Caching disabled for task ':app:processDebugManifest' because:
+  Build cache is disabled
+Skipping task ':app:processDebugManifest' as it is up-to-date.
+Resolve mutations for :app:processDebugManifestForPackage (Thread[Execution worker Thread 2,5,main]) started.
+:app:processDebugManifestForPackage (Thread[Execution worker Thread 2,5,main]) started.
+
+> Task :app:processDebugManifestForPackage UP-TO-DATE
+Custom actions are attached to task ':app:processDebugManifestForPackage'.
+Caching disabled for task ':app:processDebugManifestForPackage' because:
+  Build cache is disabled
+Skipping task ':app:processDebugManifestForPackage' as it is up-to-date.
+Resolve mutations for :app:processDebugResources (Thread[Execution worker Thread 2,5,main]) started.
+:app:processDebugResources (Thread[Execution worker Thread 2,5,main]) started.
+
+> Task :app:processDebugResources UP-TO-DATE
+Caching disabled for task ':app:processDebugResources' because:
+  Build cache is disabled
+Skipping task ':app:processDebugResources' as it is up-to-date.
+Resolve mutations for :app:kaptGenerateStubsDebugKotlin (Thread[Execution worker Thread 2,5,main]) started.
+:app:kaptGenerateStubsDebugKotlin (Thread[Execution worker Thread 2,5,main]) started.
+
+> Task :app:kaptGenerateStubsDebugKotlin UP-TO-DATE
+Caching disabled for task ':app:kaptGenerateStubsDebugKotlin' because:
+  Build cache is disabled
+Skipping task ':app:kaptGenerateStubsDebugKotlin' as it is up-to-date.
+Resolve mutations for :app:kaptDebugKotlin (Thread[Execution worker Thread 2,5,main]) started.
+:app:kaptDebugKotlin (Thread[Execution worker Thread 2,5,main]) started.
+
+> Task :app:kaptDebugKotlin UP-TO-DATE
+file or directory 'D:\M\t\y\myl\myl\myl\app\src\debug\kotlin', not found
+file or directory 'D:\M\t\y\myl\myl\myl\app\src\debug\kotlin', not found
+file or directory 'D:\M\t\y\myl\myl\myl\app\src\debug\java', not found
+file or directory 'D:\M\t\y\myl\myl\myl\app\src\debug\kotlin', not found
+file or directory 'D:\M\t\y\myl\myl\myl\app\src\debug\java', not found
+file or directory 'D:\M\t\y\myl\myl\myl\app\src\main\kotlin', not found
+file or directory 'D:\M\t\y\myl\myl\myl\app\src\main\kotlin', not found
+file or directory 'D:\M\t\y\myl\myl\myl\app\src\main\kotlin', not found
+file or directory 'D:\M\t\y\myl\myl\myl\app\src\main\kotlin', not found
+file or directory 'D:\M\t\y\myl\myl\myl\app\src\main\kotlin', not found
+file or directory 'D:\M\t\y\myl\myl\myl\app\src\main\kotlin', not found
+file or directory 'D:\M\t\y\myl\myl\myl\app\src\debug\kotlin', not found
+file or directory 'D:\M\t\y\myl\myl\myl\app\src\debug\kotlin', not found
+file or directory 'D:\M\t\y\myl\myl\myl\app\src\debug\java', not found
+file or directory 'D:\M\t\y\myl\myl\myl\app\src\debug\kotlin', not found
+file or directory 'D:\M\t\y\myl\myl\myl\app\src\debug\java', not found
+file or directory 'D:\M\t\y\myl\myl\myl\app\src\debug\java', not found
+Caching disabled for task ':app:kaptDebugKotlin' because:
+  Build cache is disabled
+Skipping task ':app:kaptDebugKotlin' as it is up-to-date.
+Resolve mutations for :app:compileDebugKotlin (Thread[Execution worker Thread 2,5,main]) started.
+:app:compileDebugKotlin (Thread[Execution worker Thread 2,5,main]) started.
+
+> Task :app:compileDebugKotlin NO-SOURCE
+Skipping task ':app:compileDebugKotlin' as it has no source files and no previous output files.
+Resolve mutations for :app:javaPreCompileDebug (Thread[Execution worker Thread 2,5,main]) started.
+:app:javaPreCompileDebug (Thread[Execution worker Thread 2,5,main]) started.
+
+> Task :app:javaPreCompileDebug UP-TO-DATE
+Caching disabled for task ':app:javaPreCompileDebug' because:
+  Build cache is disabled
+Skipping task ':app:javaPreCompileDebug' as it is up-to-date.
+Resolve mutations for :app:compileDebugJavaWithJavac (Thread[Execution worker Thread 2,5,main]) started.
+:app:compileDebugJavaWithJavac (Thread[Execution worker Thread 2,5,main]) started.
+
+> Task :app:compileDebugJavaWithJavac FAILED
+Custom actions are attached to task ':app:compileDebugJavaWithJavac'.
+Caching disabled for task ':app:compileDebugJavaWithJavac' because:
+  Build cache is disabled
+Task ':app:compileDebugJavaWithJavac' is not up-to-date because:
+  Task has failed previously.
+The input changes require a full rebuild for incremental task ':app:compileDebugJavaWithJavac'.
+Compilation mode: in-process compilation
+Full recompilation is required because no incremental change information is available. This is usually caused by clean builds or changing compiler arguments.
+Compiling with toolchain 'C:\Program Files\Eclipse Adoptium\jdk-17.0.16.8-hotspot'.
+file or directory 'D:\M\t\y\myl\myl\myl\app\src\debug\java', not found
+Compiling with JDK Java compiler API.
+.\gradlew.bat : D:\M\t\y\myl\myl\myl\app\src\main\java\com\xie\mydaning\ui\HomeFragment.java:91: 错误: 找不到符号
+所在位置 C:\Users\Benteng\AppData\Local\Temp\ps-script-3eb9c975-c8e2-468b-a8d3-2954d0daa9a2.ps1:83 字符: 1
++ .\gradlew.bat compileDebugJavaWithJavac --info 2>&1 | Out-File -FileP ...
++ ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : NotSpecified: (D:\M\t\y\myl\my...a:91: 错误: 找不到符号:String) [], RemoteException
+    + FullyQualifiedErrorId : NativeCommandError
+ 
+            if (getActivity() instanceof MainActivity) {
+                                         ^
+  符号:   类 MainActivity
+  位置: 类 HomeFragment
+D:\M\t\y\myl\myl\myl\app\src\main\java\com\xie\mydaning\ui\HomeFragment.java:92: 错误: 找不到符号
+                ((MainActivity) getActivity()).switchToRecord();
+                  ^
+  符号:   类 MainActivity
+  位置: 类 HomeFragment
+D:\M\t\y\myl\myl\myl\app\src\main\java\com\xie\mydaning\ui\HomeFragment.java:97: 错误: 找不到符号
+            if (getActivity() instanceof MainActivity) {
+                                         ^
+  符号:   类 MainActivity
+  位置: 类 HomeFragment
+D:\M\t\y\myl\myl\myl\app\src\main\java\com\xie\mydaning\ui\HomeFragment.java:98: 错误: 找不到符号
+                ((MainActivity) getActivity()).switchToHistory();
+                  ^
+  符号:   类 MainActivity
+  位置: 类 HomeFragment
+D:\M\t\y\myl\myl\myl\app\src\main\java\com\xie\mydaning\ui\RecordFragment.java:138: 错误: 找不到符号
+        if (getActivity() instanceof MainActivity) {
+                                     ^
+  符号:   类 MainActivity
+  位置: 类 RecordFragment
+D:\M\t\y\myl\myl\myl\app\src\main\java\com\xie\mydaning\ui\RecordFragment.java:139: 错误: 找不到符号
+            ((MainActivity) getActivity()).switchToHome();
+              ^
+  符号:   类 MainActivity
+  位置: 类 RecordFragment
+6 个错误
+
+[Incubating] Problems report is available at: file:///D:/M/t/y/myl/myl/myl/build/reports/problems/problems-report.html
+
+FAILURE: Build failed with an exception.
+
+* What went wrong:
+Execution failed for task ':app:compileDebugJavaWithJavac'.
+> Compilation failed; see the compiler output below.
+  D:\M\t\y\myl\myl\myl\app\src\main\java\com\xie\mydaning\ui\HomeFragment.java:91: 错误: 找不到符号
+              if (getActivity() instanceof MainActivity) {
+                                           ^
+    符号:   类 MainActivity
+    位置: 类 HomeFragment
+  D:\M\t\y\myl\myl\myl\app\src\main\java\com\xie\mydaning\ui\HomeFragment.java:92: 错误: 找不到符号
+                  ((MainActivity) getActivity()).switchToRecord();
+                    ^
+    符号:   类 MainActivity
+    位置: 类 HomeFragment
+  D:\M\t\y\myl\myl\myl\app\src\main\java\com\xie\mydaning\ui\HomeFragment.java:97: 错误: 找不到符号
+              if (getActivity() instanceof MainActivity) {
+                                           ^
+    符号:   类 MainActivity
+    位置: 类 HomeFragment
+  D:\M\t\y\myl\myl\myl\app\src\main\java\com\xie\mydaning\ui\HomeFragment.java:98: 错误: 找不到符号
+                  ((MainActivity) getActivity()).switchToHistory();
+                    ^
+    符号:   类 MainActivity
+    位置: 类 HomeFragment
+  D:\M\t\y\myl\myl\myl\app\src\main\java\com\xie\mydaning\ui\RecordFragment.java:138: 错误: 找不到符号
+          if (getActivity() instanceof MainActivity) {
+                                       ^
+    符号:   类 MainActivity
+    位置: 类 RecordFragment
+  D:\M\t\y\myl\myl\myl\app\src\main\java\com\xie\mydaning\ui\RecordFragment.java:139: 错误: 找不到符号
+              ((MainActivity) getActivity()).switchToHome();
+                ^
+    符号:   类 MainActivity
+    位置: 类 RecordFragment
+  6 个错误
+
+* Try:
+> Check your code and dependencies to fix the compilation error(s)
+> Run with --scan to get full insights.
+
+Deprecated Gradle features were used in this build, making it incompatible with Gradle 9.0.
+
+You can use '--warning-mode all' to show the individual deprecation warnings and determine if they come from your own scripts or plugins.
+
+For more on this, please refer to https://docs.gradle.org/8.13/userguide/command_line_interface.html#sec:command_line_warnings in the Gradle documentation.
+
+18 actionable tasks: 2 executed, 16 up-to-date
+BUILD FAILED in 1s
+Watched directory hierarchies: [D:\M\t\y\myl\myl\myl]
